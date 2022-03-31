@@ -7,7 +7,8 @@ const UserRecord = (props) => {
       <td>{id}</td>
       <td>{username}</td>
       <td>{email}</td>
-      <td><NavLink className='btn btn-success text-white' to={`/profile/${props.id}`}>Profile</NavLink></td>
+      <td><NavLink className='btn btn-success text-white mx-3' to={`/profile/${props.id}`}>Profile</NavLink>
+        <NavLink className='btn btn-info text-white' to={`#`}>Edit</NavLink></td>
     </tr>
   )
 }
