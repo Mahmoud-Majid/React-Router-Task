@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../homeScreen/Button';
+import { NavLink } from 'react-router-dom';
 const UserRecord = (props) => {
   const { id, username, email } = props;
   return (
@@ -7,7 +7,7 @@ const UserRecord = (props) => {
       <td>{id}</td>
       <td>{username}</td>
       <td>{email}</td>
-      <td><Button id={id}>Profile</Button></td>
+      <td><NavLink className='btn btn-success text-white' to={`/profile/${props.id}`}>Profile</NavLink></td>
     </tr>
   )
 }
